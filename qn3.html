@@ -1,0 +1,33 @@
+<form action="/submit" method="POST">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Password: <input type="password" name="pwd" required></label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Interests</legend>
+      <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+      <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+    </fieldset>
+  
+    <label>Country:
+      <select name="country">
+        <option value="tz">Tanzania</option>
+        <option value="ke">Kenya</option>
+      </select>
+    </label><br>
+  
+    <label>Profile Picture:
+      <input type="file" name="profile_pic">
+    </label><br>
+  
+    <button type="submit">Submit</button>
+  </form>
